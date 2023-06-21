@@ -37,6 +37,7 @@ let s:black           = { "gui": "#000000", "cterm": "232"  }
 let s:actual_black    = { "gui": "NONE",    "cterm": "NONE" }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243"  }
 let s:white           = { "gui": "#F1F1F1", "cterm": "15"   }
+let s:dark_white      = { "gui": "#efefef", "cterm": "15"   }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231"  }
 let s:subtle_black    = { "gui": "#151515", "cterm": "236"  }
 let s:light_black     = { "gui": "#262626", "cterm": "235"  }
@@ -134,7 +135,7 @@ hi! link Boolean          Constant
 hi! link Float            Constant
 hi! link String           Constant
 
-"call s:h("Identifier",    {"fg": s:dark_blue})
+call s:h("Identifier",    {"fg": s:dark_active})
 hi! link Identifier       PlainNormal
 hi! link Function         Identifier
 
@@ -183,7 +184,7 @@ call s:h("Question",      {"fg": s:dark_active})
 call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
 call s:h("VertSplit",     {"bg": s:black, "fg": s:white})
-call s:h("Title",         {"fg": s:dark_blue})
+call s:h("Title",         {"fg": s:dark_active})
 call s:h("Visual",        {"fg": s:black, "bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:yellow})
